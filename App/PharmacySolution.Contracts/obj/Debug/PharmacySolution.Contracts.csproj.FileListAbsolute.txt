@@ -1,0 +1,10 @@
+C:\Users\Yuriy\Documents\Visual Studio 2013\Projects\PharmacySolution\App\PharmacySolution.Contracts\bin\Debug\PharmacySolution.Contracts.dll
+C:\Users\Yuriy\Documents\Visual Studio 2013\Projects\PharmacySolution\App\PharmacySolution.Contracts\bin\Debug\PharmacySolution.Contracts.pdb
+C:\Users\Yuriy\Documents\Visual Studio 2013\Projects\PharmacySolution\App\PharmacySolution.Contracts\obj\Debug\PharmacySolution.Contracts.dll
+C:\Users\Yuriy\Documents\Visual Studio 2013\Projects\PharmacySolution\App\PharmacySolution.Contracts\obj\Debug\PharmacySolution.Contracts.pdb
+C:\Users\Yuriy\Documents\PharmacySolution\App\PharmacySolution.Contracts\bin\Debug\PharmacySolution.Contracts.dll
+C:\Users\Yuriy\Documents\PharmacySolution\App\PharmacySolution.Contracts\bin\Debug\PharmacySolution.Contracts.pdb
+C:\Users\Yuriy\Documents\PharmacySolution\App\PharmacySolution.Contracts\obj\Debug\PharmacySolution.Contracts.dll
+C:\Users\Yuriy\Documents\PharmacySolution\App\PharmacySolution.Contracts\obj\Debug\PharmacySolution.Contracts.pdb
+C:\Users\Yuriy\Documents\PharmacySolution\App\PharmacySolution.Contracts\obj\Debug\PharmacySolution.Contracts.csprojResolveAssemblyReference.cache
+C:\Users\Yuriy\documents\visual studio 2013\Projects\PharmacySolution\App\PharmacySolution.Contracts\obj\Debug\PharmacySolution.Contracts.csprojResolveAssemblyReference.cache

@@ -1,0 +1,44 @@
+﻿@model IEnumerable<PharmacySolution.Web.Core.Models.OrderDetailsListViewModel>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MedicamentName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UnitPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Count)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedicamentName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Count)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { medicamentId = item.MedicamentId, orderId = item.OrderId }) |
+                @Html.ActionLink("Details", "Details", new { medicamentId = item.MedicamentId, orderId = item.OrderId }) |
+                @Html.ActionLink("Delete", "Delete", new { medicamentId = item.MedicamentId, orderId = item.OrderId })
+            </td>
+        </tr>
+    }
+</table>
+

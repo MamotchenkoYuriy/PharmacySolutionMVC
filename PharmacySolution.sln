@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PharmacySolution.Core", "App\PharmacySolution.Core\PharmacySolution.Core.csproj", "{65A26E7E-4A15-415E-9D5B-7AF8102443E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PharmacySolution.Contracts", "App\PharmacySolution.Contracts\PharmacySolution.Contracts.csproj", "{322F1DF1-52A6-47BD-B138-70468EDAFE4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PharmacySolution.BusinessLogic", "App\PharmacySolution.BusinessLogic\PharmacySolution.BusinessLogic.csproj", "{EE7EF623-D52E-431F-87BB-F2729BFEE72B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PharmacySolution.Data", "App\PharmacySolution.Data\PharmacySolution.Data.csproj", "{F399FC5B-B590-49F6-8D8C-21C5F3A96170}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PharmacySolution.IOC", "App\PharmacySolution.IOC\PharmacySolution.IOC.csproj", "{AD5A3692-C11C-42C7-8D79-A766E991961B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "App\ConsoleApp\ConsoleApp.csproj", "{5BD423D5-CBEF-4B52-83B9-4760B39395FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PharmacySolution.UnitTestProject", "App\PharmacySolution.UnitTestProject\PharmacySolution.UnitTestProject.csproj", "{669C3FF3-F3A3-46F0-9FA3-B63B00FFBBAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PharmacySolution.IOC.CastleWindsor", "App\PharmacySolution.IOC.CastleWindsor\PharmacySolution.IOC.CastleWindsor.csproj", "{31FB5E01-79F5-4E6A-8EDE-6D038321397E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B223F55E-739F-4082-9BB1-5B25EB6E656E}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PharmacySolution.Web.Core", "App\PharmacySolution.Web.Core\PharmacySolution.Web.Core.csproj", "{870DA9C6-B7D8-44FD-819A-AACDCD86CA9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PharmacySolution.Web", "App\PharmacySolution.Web\PharmacySolution.Web.csproj", "{BC23F90E-8C14-48DC-90F1-09919699D98A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65A26E7E-4A15-415E-9D5B-7AF8102443E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A26E7E-4A15-415E-9D5B-7AF8102443E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A26E7E-4A15-415E-9D5B-7AF8102443E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A26E7E-4A15-415E-9D5B-7AF8102443E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{322F1DF1-52A6-47BD-B138-70468EDAFE4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{322F1DF1-52A6-47BD-B138-70468EDAFE4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{322F1DF1-52A6-47BD-B138-70468EDAFE4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{322F1DF1-52A6-47BD-B138-70468EDAFE4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE7EF623-D52E-431F-87BB-F2729BFEE72B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE7EF623-D52E-431F-87BB-F2729BFEE72B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE7EF623-D52E-431F-87BB-F2729BFEE72B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE7EF623-D52E-431F-87BB-F2729BFEE72B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F399FC5B-B590-49F6-8D8C-21C5F3A96170}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F399FC5B-B590-49F6-8D8C-21C5F3A96170}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F399FC5B-B590-49F6-8D8C-21C5F3A96170}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F399FC5B-B590-49F6-8D8C-21C5F3A96170}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD5A3692-C11C-42C7-8D79-A766E991961B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD5A3692-C11C-42C7-8D79-A766E991961B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD5A3692-C11C-42C7-8D79-A766E991961B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD5A3692-C11C-42C7-8D79-A766E991961B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BD423D5-CBEF-4B52-83B9-4760B39395FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BD423D5-CBEF-4B52-83B9-4760B39395FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BD423D5-CBEF-4B52-83B9-4760B39395FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BD423D5-CBEF-4B52-83B9-4760B39395FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{669C3FF3-F3A3-46F0-9FA3-B63B00FFBBAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{669C3FF3-F3A3-46F0-9FA3-B63B00FFBBAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{669C3FF3-F3A3-46F0-9FA3-B63B00FFBBAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{669C3FF3-F3A3-46F0-9FA3-B63B00FFBBAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31FB5E01-79F5-4E6A-8EDE-6D038321397E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31FB5E01-79F5-4E6A-8EDE-6D038321397E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31FB5E01-79F5-4E6A-8EDE-6D038321397E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31FB5E01-79F5-4E6A-8EDE-6D038321397E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{870DA9C6-B7D8-44FD-819A-AACDCD86CA9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{870DA9C6-B7D8-44FD-819A-AACDCD86CA9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{870DA9C6-B7D8-44FD-819A-AACDCD86CA9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{870DA9C6-B7D8-44FD-819A-AACDCD86CA9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC23F90E-8C14-48DC-90F1-09919699D98A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC23F90E-8C14-48DC-90F1-09919699D98A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC23F90E-8C14-48DC-90F1-09919699D98A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC23F90E-8C14-48DC-90F1-09919699D98A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35;packages\Unity.Interception.2.1.505.2\lib\NET35
+	EndGlobalSection
+EndGlobal

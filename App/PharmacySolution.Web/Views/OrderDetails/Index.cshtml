@@ -1,0 +1,75 @@
+﻿@model IEnumerable<PharmacySolution.Web.Core.Models.OrderDetailsListViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<p>
+    @Html.Label("Select order number to view order details")
+</p>
+@Html.DropDownList("Orders", ViewBag.Medicaments as List<SelectListItem>, new { style = "width:250px", @class = "dropdown", @id = "drop-down-list" })
+<div id="table-to-change">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MedicamentName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnitPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Count)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MedicamentName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UnitPrice)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Count)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { medicamentId = item.MedicamentId, orderId = item.OrderId }) |
+                    @Html.ActionLink("Details", "Details", new { medicamentId = item.MedicamentId, orderId = item.OrderId }) |
+                    @Html.ActionLink("Delete", "Delete", new { medicamentId = item.MedicamentId, orderId = item.OrderId })
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#drop-down-list").change(function () {
+            $.ajax({
+                method: "Get",
+                url: "/OrderDetails/GetTablePartialView",
+                data: "id=" + $("#drop-down-list").val(),
+                success: function (data) {
+                    $("#table-to-change").html(data);
+                },
+                error: function () {
+                    alert("Ошибка установки значения :-(((");
+                }
+            });
+        });
+    })
+</script>

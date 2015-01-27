@@ -1,0 +1,46 @@
+﻿@model IEnumerable<PharmacySolution.Web.Core.Models.StorageViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MedicamentName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PharmacyNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Count)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MedicamentName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PharmacyNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Count)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { pharmacyId = item.PharmacyId, medicamentId = item.MedicamentId}) |
+            @Html.ActionLink("Details", "Details", new { pharmacyId = item.PharmacyId, medicamentId = item.MedicamentId}) |
+            @Html.ActionLink("Delete", "Delete", new { pharmacyId = item.PharmacyId, medicamentId = item.MedicamentId})
+        </td>
+    </tr>
+}
+
+</table>

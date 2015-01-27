@@ -1,0 +1,70 @@
+﻿@model IEnumerable<PharmacySolution.Web.Core.Models.MedicamentPriceHistoryViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<p>
+    @Html.Label("Выберите нужную препарат для отображения его цен!")
+</p>
+@Html.DropDownList("Medicament", ViewBag.Medicaments as List<SelectListItem>, new { style = "width:250px", @class = "dropdown", @id = "drop-down-list" })
+<div id="table-to-change">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MedicamentName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ModifiedDate)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MedicamentName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ModifiedDate)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#drop-down-list").change(function () {
+            $.ajax({
+                method: "Get",
+                url: "/MedicamentPriceHistory/GetTablePartialView",
+                data: "id=" + $("#drop-down-list").val(),
+                success: function (data) {
+                    $("#table-to-change").html(data);
+                },
+                error: function () {
+                    alert("Ошибка установки значения :-(((");
+                }
+            });
+        });
+    })
+</script>
